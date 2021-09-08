@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PsyDep Survey</title>
+    <meta charset="utf-8" lang="en">
+    <meta name="keywords" content="university survey study">
+    <meta name="description" content="A university survey">
+    <link rel="stylesheet" type="text/css" href="form_site_styles.css">
+</head>
+<body>
+    <h1 id="title"> University groups survey</h1>
+    <p id="description">Hello! This website is made for the research conducted by the Psychology Department. <br>Please,
+        fill in the form to help our department with its study.</p>
+    <form id="survey-form">
+        <!-- enter my name in a field with id="name" -->
+        <div class="user-name">
+            <label id="name-label" for="name">Your name:</label>
+            <input type="text" id="name" class="form-field" name="Name" placeholder="Enter your name" required>
+        </div>
+        <!-- enter an email in a field with id="email" -->
+        <div class="user-email">
+            <label id="email-label" >Your email: </label>
+            <input type="email" class="form-field" id="email" placeholder="Enter your email" required>
+        </div>
+        <!-- enter a number in a field with id="number" -->
+        <div class="group-number">
+            <label id="number-label"> Your group number:</label>
+            <input type="number" id="number" class="form-field" placeholder="Enter your group number" min="0" max="15">
+        </div>
+        <!-- corresponding labels that describe the purpose of each field  id="name-label", id="email-label", and id="number-label" -->
 
+        <!-- select an option from a dropdown that has a corresponding id="dropdown" -->
+        <div class="drpdwn-major">
+            <span>Choose your major: </span>
+            <select id="dropdown" class="form-field" name="major"> 
+                <option disabled="" selected="" value="">Your Major:</option>
+                <option value="Art">Art</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Drama">Drama</option>
+                <option value="Sociology">Sociology</option>
+            </select>
+        </div>
+        <!-- select a field from one or more groups of radio buttons + groupped with name attr -->
+        <div class="radio-tiredness">
+            <p>On the scale from 1 to 5, how do you evaluate your tiredness after lectures?</p>
+            <label>
+                <input type="radio" value="1" name="tiredness-scale" checked> 1
+            </label>
+            <label>
+                <input type="radio" value="2" name="tiredness-scale"> 2
+            </label>
+            <label>
+                <input type="radio" value="3" name="tiredness-scale"> 3
+            </label>
+            <label>
+                <input type="radio" value="4" name="tiredness-scale"> 4
+            </label>
+            <label>
+                <input type="radio" value="5" name="tiredness-scale"> 5
+            </label>
+        </div>
+        <!-- select several fields from a series of checkboxes, each of which must have a value attr -->
+        <div class="check-relaxation">
+            <p>How do you prefer relaxing after a tough day at university?</p>
+            <label>
+                <input type="checkbox" value="films" name="relaxation" checked> Watching films
+            </label>
+            <label>
+                <input type="checkbox" value="going-out" name="relaxation"> Going out with friends
+            </label>
+            <label>
+                <input type="checkbox" value="mental-relaxation" name="relaxation" checked> Doing mental relaxation
+                techniques (medtation, etc)
+            </label>
+            <label>
+                <input type="checkbox" value="nothing" name="relaxation"> I don't do anything
+            </label>
+        </div>
+        <!-- textarea at the end for additional comments -->
+        <div class="commentaries">
+            <label for="textarea-label"></label>
+            <textarea name="comments" id="textarea-label" rows="10" cols="80">Add your commentaries</textarea>
+        </div>
+        <!-- a button with id="submit" to submit all my inputs -->
+        <div class="submit-button">
+            <label for="submit-label"></label>
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

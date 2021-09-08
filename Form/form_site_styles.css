@@ -1,0 +1,97 @@
+body {
+    background:url(https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% fixed;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2em;
+    width: auto;
+    height: auto;
+}
+
+h1, p, .radio-tiredness {
+    text-align: center;
+}
+
+h1, h1 + p {
+    color: /*rgb(100, 126, 42)*/ rgb(247, 252, 243);
+    text-shadow: 3px 3px 10px /*rgb(103, 125, 69)*/ black;
+}
+
+#survey-form {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(96, 121, 40, 0.7) 0% , rgba(100, 119, 66, 0.7) 100%);
+    border-radius: 5%; 
+    position:relative;
+    left: 15%;
+}
+
+.form-field {
+    font-size: 0.5em;
+}
+
+.user-name, .user-email, .group-number, .drpdwn-major{
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column wrap;
+    width: inherit;
+}
+
+.radio-tiredness, .check-relaxation, .commentaries, .submit-button  {
+    padding: 0.25em;
+}
+
+.group-number {
+    display: flex;
+    align-self: center;
+}
+
+.radio-tiredness label {
+    display: inline-block;
+}
+
+.check-relaxation label {
+    display: flex;
+    align-items: center;
+} 
+
+textarea:focus {
+    border: 2px solid rgb(100, 126, 52);
+    font-size: 0.65em;
+    color: black;
+}
+
+#submit {
+    background-color: rgb(224, 230, 214);
+    border: rgb(100, 126, 52) 5px;
+    border-radius: 5%;
+    height: 2.5em;
+    width: 10em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 420px) { 
+    body {
+        width: 390px;
+        background: url(https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% no-repeat fixed;
+        background-size: cover;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 730px;
+        background: url(https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% no-repeat fixed;
+        background-size: cover;
+    }  
+} 
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 960px;
+        background: url(https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% no-repeat fixed;
+        background-size: cover;
+    } 
+}
